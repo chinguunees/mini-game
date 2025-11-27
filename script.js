@@ -1,7 +1,7 @@
 // const value = prompt("1-10 дотор тоо оруулан таагаарай");
 
 // const randomNumber = Math.floor(Math.random() * 10 + 1);
-for (let i = 0; true; i++) {
+for (let i = 1; i <= 5; i++) {
   const randomNumber = Math.floor(Math.random() * 10 + 1);
   value = Number(prompt("1-10 дотор тоо оруулан "));
   let oroldlogo = i;
@@ -26,6 +26,9 @@ for (let i = 0; true; i++) {
       oroldlogo
     );
     break;
+  }
+  if (i === 5) {
+    console.log("Тоглоом дууслаа, Дахин оролдоно уу");
   }
 }
 
