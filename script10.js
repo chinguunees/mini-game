@@ -8,27 +8,22 @@ function togloom() {
   const randomNumber = Math.floor(Math.random() * 10 + 1);
   oroldlogo++;
   if (input.value < randomNumber) {
-    togloy.innerHTML = "<h1>Жаахан багадаад байна</h1>" + randomNumber;
+    togloy.innerHTML = "<p>Жаахан багадаад байна</p>";
     console.log("Жаахан багадаад байна");
   }
   if (input.value > randomNumber) {
-    togloy.innerHTML = "<h1>Ихийг оруулаад байнаа</h1>" + randomNumber;
+    togloy.innerHTML = "<p>Ихийг оруулаад байнаа</p>";
     console.log("Ихийг оруулаад байнаа");
     // } else if (input.value != randomNumber) {
     //   togloy.innerHTML = "<h1>Уг нь зөв тоо нь</h1>" + randomNumber;
     //   console.log("Уг нь зөв тоо нь: ", randomNumber);
   }
   if (input.value == randomNumber) {
-    togloy.innerHTML = "<h1>Зөв таалаа баяр хүргье</h1>";
-    console.log(
-      "Зөв таалаа баяр хүргье, Хөөрхнөө",
-      "Зөв тоо нь:",
-      randomNumber,
-      "Нийт оролдлого"
-    );
+    togloy.innerHTML = "<p>Got it<p>";
+    console.log("Зөв таалаа", "Зөв тоо нь:", randomNumber, "Нийт оролдлого");
   }
   if (oroldlogo === 5) {
-    togloy.innerHTML = "<h1> Game over LOSER </h1>";
+    togloy.innerHTML = "<p> Game over LOSER <p>";
     console.log("Тоглоом дууслаа, Дахин оролдоно уу");
   }
 }
